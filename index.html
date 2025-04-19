@@ -8,27 +8,53 @@
 </head>
 <body>
     <header>
-        <h1>Hi, I'm [Your Name] 👋</h1>
+        <button id="theme-toggle">🌓</button>
+        <h1>Hi, I'm [MuhandiramTB] 👋</h1>
         <p>Aspiring Full-Stack Developer</p>
     </header>
     
-    <section class="about">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about" class="about">
         <h2>About Me</h2>
         <p>I'm learning full-stack development with a focus on HTML, CSS, JavaScript, and React.</p>
     </section>
     
-    <section class="projects">
+    <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="project-list">
             <div class="project">
                 <h3>To-Do List App</h3>
-                <p>A simple app to manage daily tasks (coming soon!)</p>
+                <p>A simple app to manage daily tasks</p>
+                <button class="project-btn">View Project</button>
+            </div>
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>Get real-time weather data</p>
+                <button class="project-btn">View Project</button>
             </div>
         </div>
     </section>
     
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
     <footer>
-        <p>Connect with me: [Your Email]</p>
+        <p>Connect with me: tbuddhika98@gmail.com</p>
+        <p id="copyright">© 2024 t98</p>
     </footer>
     
     <script src="script.js"></script>
